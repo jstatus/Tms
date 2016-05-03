@@ -18,7 +18,7 @@ import java.util.Scanner;
  public void save(Teacher tea){
  	
  	if(index >= teas.length){
- 		Teacher[] demo = new Teacher[teas.length+4];
+ 		Teacher[] demo = new Teacher[teas.length+3];
  		System.arraycopy(teas,0,demo,0,index);
  		teas = demo;
  }
@@ -121,7 +121,7 @@ public void deleteById(long id){
  					String[] teaArr = teaStr.split("#");
 					//将用户的输入进行处理
  					long id = Long.parseLong(teaArr[0]);
- 					String name = teaArr[0];
+ 					String name = teaArr[1];
  					int age = Integer.parseInt(teaArr[2]);
  					//封装对象
  					Teacher tea = new Teacher(id,name,age);

@@ -1,4 +1,4 @@
-package com.wjava.ch06;
+package com.wjava.ch15;
  
 import java.util.Scanner;
 
@@ -18,7 +18,7 @@ import java.util.Scanner;
  public void save(Teacher tea){
  	
  	if(index >= teas.length){
- 		Teacher[] demo = new Teacher[teas.length+4];
+ 		Teacher[] demo = new Teacher[teas.length+3];
  		System.arraycopy(teas,0,demo,0,index);
  		teas = demo;
  }
